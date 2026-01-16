@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SVG to TGS Converter</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://cdn.jsdelivr.net/pyodide/v0.29.1/full/pyodide.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.13.0/lottie.min.js"></script>
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <nav>
+    <a href="index.html">Конвертер</a>
+    <a href="about.html">Про проєкт</a>
+  </nav>
+  <h1>Конвертер SVG в TGS для Telegram стікерів</h1>
+  <div class="container">
+    <input type="file" id="svgFile" accept=".svg">
+    <select id="animationType">
+      <option value="fade">Fade In/Out (затухання)</option>
+      <option value="scale">Scale Up/Down (збільшення/зменшення)</option>
+      <option value="rotate">Rotate (обертання)</option>
+      <!-- Додай більше опцій за потребою -->
+    </select>
+    <button onclick="convertToJson()">Конвертувати в JSON</button>
+    <div id="preview" class="preview-container"></div>
+    <button onclick="previewAnimation()">Попередній перегляд</button>
+    <button onclick="convertToTgs()">Конвертувати в TGS та скачати</button>
+    <div id="status" class="status"></div>
+  </div>
+</body>
+</html>
