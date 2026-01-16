@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Про проєкт</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav>
+    <a href="index.html">Конвертер</a>
+    <a href="about.html">Про проєкт</a>
+  </nav>
+  <h1>Про SVG to TGS Converter</h1>
+  <div class="container">
+    <p>Цей інструмент дозволяє конвертувати SVG-файли в TGS-формат для Telegram стікерів з додаванням простих анімацій. Все працює в браузері за допомогою Pyodide (Python в WebAssembly).</p>
+    <h2>Як використовувати:</h2>
+    <ol>
+      <li>Завантаж SVG-файл (рекомендовано: розмір 512x512, векторний).</li>
+      <li>Обери тип анімації.</li>
+      <li>Натисни "Конвертувати в JSON".</li>
+      <li>Переглянь preview.</li>
+      <li>Скачай TGS (стиснутий Lottie JSON, <64 KB).</li>
+    </ol>
+    <h2>Обмеження:</h2>
+    <ul>
+      <li>Працює з простими SVG. Складні ефекти можуть спроститися.</li>
+      <li>Початкове завантаження Pyodide може зайняти 5-15 сек.</li>
+      <li>TGS для Telegram: max 512x512, 60 FPS.</li>
+    </ul>
+    <p>Приклади SVG: Шукай на сайтах як Vecteezy або створюй в Inkscape.</p>
+  </div>
+</body>
+</html>
